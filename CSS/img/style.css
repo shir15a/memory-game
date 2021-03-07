@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: 'Akaya Telivigala', cursive;
+    background:  #e6eeff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+
+
+.back{
+    background: url(/CSS/img/back.png) no-repeat center/cover;;
+    width: 9vw;
+    height: 20vh;
+}
+
+button{
+    font-family: 'Akaya ', cursive;
+    font-family: 'Akaya Telivigala', cursive;
+    border:  solid #2099BA; 
+    border-radius: 15%;
+    width: 5vw;
+    height: 5vh;
+    cursor:pointer;
+    opacity: .8;
+
+}
+
+/* .header h1{
+    font-family: 'Akaya Telivigala', cursive;
+} */
+
+.board{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    width: 62vw;
+}
+
+.card {
+    width: 9vw;
+    height: 20vh;
+    margin: 5px;
+}
+
+.card img{
+    position: absolute;
+    width: 9vw;
+    height: 20vh;
+    
+}
+
+.flipped .back{
+    display: none;
+}
+
